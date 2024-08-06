@@ -31,3 +31,9 @@ While running the containers
 ```
 $ docker exec -it api pytest
 ```
+
+
+Connect to the postgres database
+```bash
+$ PGPASSWORD=postgres psql -U postgres -p 5432 -d postgres -h localhost
+```
